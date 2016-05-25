@@ -6,3 +6,4 @@ def publish(function, *args, **kwargs):
         elapsed = timeit.default_timer() - start_time
     except Exception as ex:
         exception_type = type(ex).__name__
+        raise ex
